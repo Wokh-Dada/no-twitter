@@ -1,0 +1,43 @@
+.like_btn{
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.avatar{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.messege{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.like_block{
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.like_block a{
+  text-decoration: none;
+}
+
+.like_icon_block{
+  display: flex;
+  align-items: center;
+}
+
+.like_block span{
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.liked{
+  padding-right: 3px;
+}

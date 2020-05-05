@@ -2,13 +2,13 @@
   <div class="col">
     <div class="row">
       <div class="col">
-        <a href="" class="d-flex align-items-center">
+        <a href="#" class="d-flex align-items-center" [class.text-danger]="!getOnlyLike()" (click)="toggleAll()">
           <span class="material-icons">list</span>Все твиты
         </a>
       </div>
       <div class="col">
-        <a href="" class="d-flex justify-content-end align-items-center" [class.text-danger]="getOnlyLike()" (click)="toggleOnlyLike()">
-          <span class="material-icons">favorite</span>Понравилось
+        <a href="#" class="d-flex justify-content-end align-items-center" [class.text-danger]="getOnlyLike()" (click)="toggleOnlyLike()">
+          <span class="material-icons liked">favorite</span>Понравилось
         </a>
       </div>
     </div>

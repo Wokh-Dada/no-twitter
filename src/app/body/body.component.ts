@@ -18,6 +18,9 @@ export class BodyComponent implements OnInit {
   toggleOnlyLike(){
     this.chatService.toggleOnlyLike();
   }
+  toggleAll() {
+    this.chatService.toggleAll();
+  }
   toggleLike(id){
     this.chatService.toggleLike(id);
   }

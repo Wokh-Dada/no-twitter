@@ -42,6 +42,9 @@ export class StoreChatService {
   toggleOnlyLike() {
     this.onlyLike = !this.onlyLike;
   }
+  toggleAll() {
+    this.onlyLike = false;
+  }
   getMessage() {
     let items;
     if (this.onlyLike){
