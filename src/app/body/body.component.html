@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col">
+    <div class="row">
+      <div class="col">
+        <a href="" class="d-flex align-items-center">
+          <span class="material-icons">list</span>Все твиты
+        </a>
+      </div>
+      <div class="col">
+        <a href="" class="d-flex justify-content-end align-items-center" [class.text-danger]="getOnlyLike()" (click)="toggleOnlyLike()">
+          <span class="material-icons">favorite</span>Понравилось
+        </a>
+      </div>
+    </div>
+    <div class="text-center text-muted p-2" *ngIf="getMessage().length === 0">
+      Нет записей вывода
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex px-0" *ngFor="let item of getMessage()">
+        <div class="border-bottom pb-2 pt-2">
+          <div class="d-flex">
+            <div>
+              <img class="avatar" src="{{item.avatar}}">
+            </div>
+            <div class="messege">
+              {{item.message}}
+            </div>
+          </div>
+          <div class="like_block" >
+            <a href="#" class="" (click)="toggleLike(item.id)" >
+            <div class="like_icon_block">
+              <span class="material-icons text-danger">{{item.like ? 'favorite' : 'favorite_border'}}</span> like
+            </div>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
